@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Lato Bold';
+    src: url("resources/fonts");
+}
+
+*,
+*::before,
+*::after {box-sizing: border-box;}
+
+ul[class], ol[class] {padding: 0;}
+
+
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {margin: 0;}
+
+body {min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;}
+
+ul[class], ol[class] {list-style: none;}
+
+a:not([class]) {text-decoration-skip-ink: auto;}
+
+/* Упрощаем работу с изображениями */
+img {max-width: 100%;display: block;}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {margin-top: 1em;}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {font: inherit;}
+
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex:1 1 auto ;
+}
+html{
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color:#181a1d;
+    color: rgba(255,255,255,0.7);
+    font-size: 1.4rem;
+}
+
+.header{
+    margin-top: 16px;
+}
+.container{
+    max-width: 1200px;
+    height: 100%;
+}
+.header__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo{
+    max-width: 350px;
+}
+.header__search input{
+    max-width: 256px;
+    max-height: 36px;
+}
+
+.header__search-icon::before{
+    font-family: FontAwesome;
+    content: "\f002";
+    position: absolute;
+    transform: translateX(10px) translateY(6px);
+    font-size: 15px;
+}
+
+.input{
+    border: solid rgba(236, 85, 85, 0.3) 1px;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    padding: 6px;
+    background-color:#242629;;
+    text-indent: 30px;
+    color: white;
+    height: 36px;
+}
+
+.input::placeholder{
+    font-size: 15px;
+    color: rgba(236, 85, 85, 1);
+}
+
+.nav{
+    margin-top: 19px;
+}
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+}
+.nav__list{
+    display: flex;
+
+}
+.nav__link{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-right: 6px;
+    padding: 10px;
+    background:  #242629;
+}
+
+
+
+.nav__login a ,
+.nav__register a ,
+.nav__profile a ,
+.nav__logout a{
+    background-color:#181a1d;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    text-underline: none;
+    font-size: 15px;
+    padding: 6px;
+}
+
+.nav__login a:hover ,
+.nav__register a:hover ,
+.nav__profile a:hover ,
+.nav__logout a:hover{
+    background-color:#181a1d;
+    color: rgba(255,255,255,1);
+
+}
+
+
+
+.nav__link:last-child{
+    margin-right: 0;
+}
+.nav__link a{
+    text-decoration: none;
+    text-underline: none;
+    color: rgba(255,255,255,0.8);
+    font-size: 17px;
+    font-family: 'Lato Bold',sans-serif;
+    padding-left: 6px;
+    padding-right: 6px;
+
+}
+.nav__link a:hover{
+    color: rgba(255,255,255,1);
+}
+
+.section{
+    font-size: 15px;
+    background: #242629;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+.section__row{
+    display: flex;
+}
+.section__list{
+    display: flex;
+}
+.section__link{
+    margin-right: 19px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.section__link a{
+    text-decoration: none;
+    text-underline: none;
+    color: rgba(255,255,255,0.7);
+}
+.section__link a:hover{
+    color: rgba(255,255,255,0.9);
+    text-decoration: underline;
+}
+
+.card-header , .card-body{
+    color: black;
+}
+
+
+
+
+
